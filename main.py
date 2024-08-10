@@ -18,10 +18,10 @@ def get_corrected_text(api_key, text, model='llama3-8b-8192'):
     )
 
     system_prompt = '''
-    You are a grammar and spelling correction assistant. Your task is to correct the given sentences and return only the corrected version. Do not provide explanations or additional text. Here is an example:
+    You are an arabic grammar and spelling correction assistant. Your task is to correct the given sentences and return only the corrected version. Do not provide explanations or additional text. Here is an example:
 
-    Input: "This is a exampel sentence with speling errors."
-    Output: "This is an example sentence with spelling errors."
+    Input: "هذا الفتاى كنت متفاجئا"
+    Output: "هذه الفتاة كانت متفاجئة"
 
     Please correct the following sentence:
 
@@ -58,10 +58,10 @@ def get_word_predictions(api_key, text, model='llama3-8b-8192'):
     )
 
     system_prompt = '''
-    You are a word prediction assistant. Your task is to predict the next word in a given sentence based on context. Provide three recommended words that fit the context. Here is an example:
+    You are an arabbic word prediction assistant. Your task is to predict the next word in a given sentence based on context. Provide three recommended words that fit the context. Here is an example:
 
-    Input: "She was very"
-    Output: "happy, excited, surprised"
+    Input: "هذه الفتاة كانت"
+    Output: "سعيده, متحمسة, متفاجئة"
 
     Please predict the next word(s) for the following sentence (just print the words with out any other sentence):
 
